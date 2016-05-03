@@ -33,18 +33,18 @@ $.fn.extend({
       ajax: {
         url: '',
         dataType: 'json',
-        type: 'post',
+        type: 'get',
         delay: 250,
         data: function(params) {
           return {
-            keyword: params.term, // search term
+            name: params.term, // search term
             currPage: params.currPage,
             page: params.page
           };
         },
         processResults: function(data, params) {
           params.currPage = params.page || 2;
-          params.keyword = params.term
+          params.name = params.term
           return {
             results: data.data,
             pagination: {
