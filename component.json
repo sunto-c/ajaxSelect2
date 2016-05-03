@@ -1,0 +1,9 @@
+{
+    "version": "0.1.0",
+    "name": "ajaxSelect2",
+    "main": "ajaxSelect2.js",
+    "dependencies": [
+      "jquery@1.9.1",
+      "select2"
+    ]
+}
