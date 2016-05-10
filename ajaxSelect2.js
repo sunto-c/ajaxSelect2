@@ -34,7 +34,7 @@ $.fn.extend({
         url: '',
         dataType: 'json',
         type: 'get',
-        delay: 250,
+        delay: 100,
         data: function(params) {
           return {
             name: params.term, // search term
